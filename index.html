@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" id="htmlTag" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aryan Mishra | Developer Landing</title>
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+    };
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-white text-gray-900 dark:bg-gray-900 dark:text-white font-sans relative">
+
+  <header class="fixed top-0 left-0 right-0 flex justify-between items-center px-6 py-4 shadow-md bg-white dark:bg-gray-900 z-50 border-b border-gray-200 dark:border-gray-700">
+    <h1 id="mainHeading" class="text-2xl font-bold cursor-pointer transition-transform duration-300 hover:scale-110">
+      Aryan Mishra
+    </h1>
+    <button id="toggleTheme" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded transition">
+      Toggle Dark Mode
+    </button>
+  </header>
+
+
+  <main class="pt-24 max-w-3xl mx-auto px-6">
+
+    <section class="flex flex-col items-center text-center py-20">
+      <img
+        src="https://i.pinimg.com/736x/2e/90/f2/2e90f27c64537ed20a3f8350391d4989.jpg"
+        alt="Profile"
+        class="rounded-full w-24 h-24 object-cover border-4 border-indigo-500 shadow-lg mb-6 cursor-pointer transition-transform duration-300 hover:scale-110"
+        id="profileImage"
+      />
+      <h2 class="text-4xl font-bold mb-2 transition-transform duration-300 hover:scale-105" id="subHeading">
+        Hi, I'm Aryan Mishra
+      </h2>
+      <p class="text-lg max-w-xl mb-6">
+        Aspiring developer passionate about web technologies and continuous learning.
+      </p>
+      <button id="visitBtn" class="bg-green-600 hover:bg-green-700 text-white rounded-full px-6 py-3 shadow transition">
+        You visited me <span id="visitCount">0</span> times
+      </button>
+    </section>
+
+
+    <section class="mb-16">
+      <h3 class="text-3xl font-semibold mb-4 border-l-4 border-indigo-500 pl-3">About Me</h3>
+      <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+        I'm currently studying Electrical Engineering but actively developing skills in frontend and backend technologies. I love working with JavaScript, Tailwind CSS, and building clean, responsive websites. DSA and backend stacks are my next goals!
+      </p>
+    </section>
+
+
+    <section class="mb-16">
+      <h3 class="text-3xl font-semibold mb-4 border-l-4 border-green-500 pl-3">Contact Me</h3>
+      <form id="contactForm" class="max-w-xl mx-auto space-y-6">
+        <input
+          type="text"
+          name="name"
+          placeholder="Your Name"
+          required
+          class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-indigo-500"
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="Your Email"
+          required
+          class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-indigo-500"
+        />
+        <textarea
+  name="message"
+  rows="4"
+  placeholder="Your Message"
+  required
+  class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-indigo-500 text-gray-900 dark:text-white bg-white dark:bg-gray-800"
+></textarea>
+
+        <button
+          type="submit"
+          class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded transition"
+        >
+          Send Message
+        </button>
+      </form>
+    </section>
+
+
+    <section>
+      <h3 class="text-3xl font-semibold mb-4 border-l-4 border-green-500 pl-3">Find Me Online</h3>
+      <p class="mb-2">
+        LinkedIn:
+        <a href="https://www.linkedin.com/in/aryan-mishra-2244b636b/" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:underline">
+          linkedin.com/in/aryan-mishra-2244b636b
+        </a>
+      </p>
+      <p>
+        GitHub:
+        <a href="https://github.com/Aryan-maker-prog" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:underline">
+          github.com/Aryan-maker-prog
+        </a>
+      </p>
+    </section>
+
+  </main>
+
+
+  <button
+    id="scrollTopBtn"
+    class="fixed bottom-8 right-8 p-3 rounded-full bg-indigo-600 text-white shadow-lg opacity-0 pointer-events-none transition-opacity"
+    title="Scroll to top"
+  >
+    ↑
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
